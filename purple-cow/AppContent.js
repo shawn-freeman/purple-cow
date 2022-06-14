@@ -4,12 +4,13 @@ import { View, StyleSheet, Text } from 'react-native';
 import countapi from 'countapi-js';
 import CounterComponent from './components/counter-component';
 import ShowCounts from './components/show-counts';
+import { env } from './config';
 
 export default function AppContent() {
     const [count, setCount] = React.useState(null);
 
     React.useEffect(() => {
-        countapi.get('shawn.freeman.com', '1ccb732e-b55a-4404-ad3f-0f99c02fe44e')
+        countapi.get(env.counterNamespace, env.counterKey)
         .then((result) => {
             setCount(result.value);
          });
