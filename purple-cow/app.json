@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "purple-cow",
+    "slug": "purple-cow",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "purple-cow"
+}
