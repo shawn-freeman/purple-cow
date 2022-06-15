@@ -12,8 +12,23 @@ export default function CounterComponent(props) {
     }
 
     return (
-        <View>
-            <Button onPress={incrementCount} title="Click me to execute counter" />
+        <View style={[localStyles.container]} >
+            <Button style={[localStyles.btnContainer]} onPress={incrementCount} title="Click me to execute counter" />
         </View>
     )
 }
+
+const localStyles = StyleSheet.create({
+    container:{
+      flex: 3,
+      justifyContent: 'flex-start',
+      alignItems: 'center',
+      width: '100%',
+    },
+
+    btnContainer:{
+        flex: 1,
+        justifyContent: 'top',
+        alignItems: 'top',
+      },
+});

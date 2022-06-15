@@ -23,6 +23,9 @@ export default function AppContent() {
 
     return (
         <View style={[localStyles.MainContainer]}>
+            <View style={[localStyles.headerContainer]} >
+                <Text style={[ localStyles.headerText ]} >Purple Cow</Text>
+            </View>
             <ShowCounts count={count} />
             <CounterComponent onIncrement={onIncrement} />
         </View>
@@ -36,7 +39,23 @@ const localStyles = StyleSheet.create({
       justifyContent: 'center',
       alignItems: 'center',
       backgroundColor: '#FAFAFA',
-      padding: 10
+      width: '90%',
+      height: '100%',
     },
-   
+
+    headerContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'purple',
+        width: '100%',
+      },
+
+      headerText:{
+        fontSize: 48, 
+        color: 'white',
+        textShadowColor: 'rgba(0, 0, 0, 25.75)',
+        textShadowOffset: {width: -5, height: 5},
+        textShadowRadius: 10
+    }
   });
