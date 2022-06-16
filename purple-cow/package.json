@@ -9,7 +9,7 @@
     "web": "expo start --web",
 
     "set:env:debug": "node ./scripts/set-env.js --env debug",
-    "set:env:release": "node ./scripts/set-env.js --env release"
+    "set:env:production": "node ./scripts/set-env.js --env production"
   },
   "dependencies": {
     "countapi-js": "^1.0.2",
