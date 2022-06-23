@@ -13,9 +13,9 @@ DotfuscatorReports/Release
 *.userprefs
 
 # Build results
-[Dd]ebug/
+**/android/app/src/[Dd]ebug/
 [Dd]ebugPublic/
-[Rr]elease/
+**/android/app/src/[Rr]elease/
 [Rr]eleases/
 x64/
 x86/
